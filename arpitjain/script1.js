@@ -30,7 +30,7 @@ var command = document.querySelector(".command");
   });
   input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
-      if (input.value.toLowerCase() !="home" || input.value.toLowerCase()!="skills" || input.value.toLowerCase()!="about" ||input.value.toLowerCase()!="help" || input.value.toLowerCase()!="certificates"){
+      if (input.value.toLowerCase() !="home" || input.value.toLowerCase()!="skills" || input.value.toLowerCase()!="about" ||input.value.toLowerCase()!="help" || input.value.toLowerCase()!="certificates" || input.value.toLowerCase()!="project" || input.value.toLowerCase()!="academic" || input.value.toLowerCase()!="hobby"){
         $("section").hide();
         $('section[id="' + "error" + '"]').show();
         
@@ -71,7 +71,27 @@ var command = document.querySelector(".command");
     $('section[id="' + destination + '"]').show();
     $("input").val('');
  }
- 
+ if (input.value.toLowerCase() == "hobby"){
+   $("section").hide();
+    var destination = input.value.toLowerCase();
+   console.log("hobby");
+   $('section[id="' + destination + '"]').show();
+   $("input").val('');
+}
+if (input.value.toLowerCase() == "academic"){
+   $("section").hide();
+    var destination = input.value.toLowerCase();
+   console.log("academic");
+   $('section[id="' + destination + '"]').show();
+   $("input").val('');
+}
+if (input.value.toLowerCase() == "project"){
+   $("section").hide();
+    var destination = input.value.toLowerCase();
+   console.log("project");
+   $('section[id="' + destination + '"]').show();
+   $("input").val('');
+}
   }
   
 });
