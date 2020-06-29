@@ -3,8 +3,32 @@ var command = document.querySelector(".command");
 
   $("section").hide();
   $("#home").show();
-  
-input.addEventListener("keyup", function(event) {
+  $(".showcase section").hide();
+  $("#Aboutme").on("click",function(){
+   $(".showcase section").hide();
+   $("#aboutme").show();
+  });
+  $("#Skill").on("click",function(){
+   $(".showcase section").hide();
+   $("#skill").show();
+  });
+  $("#certifications").on("click",function(){
+   $(".showcase section").hide();
+   $("#Certifications").show();
+  });
+  $("#projects").on("click",function(){
+   $(".showcase section").hide();
+   $("#Projects").show();
+  });
+  $("#academics").on("click",function(){
+   $(".showcase section").hide();
+   $("#Academics").show();
+  });
+  $("#hobbies").on("click",function(){
+   $(".showcase section").hide();
+   $("#Hobbies").show();
+  });
+  input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
       if (input.value.toLowerCase() !="home" || input.value.toLowerCase()!="skills" || input.value.toLowerCase()!="about" ||input.value.toLowerCase()!="help" || input.value.toLowerCase()!="certificates"){
         $("section").hide();

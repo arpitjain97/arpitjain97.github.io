@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Warnes&display=swap');
 *{
     margin:0;
     padding:0;
@@ -133,7 +134,7 @@ font-family: Orbitron;
 .dashboard{
     position: relative;
     width: 100%;
-    background-color: #0d110d;
+    background-color: #0d0e0d;
     height:auto;
     margin-top: 4%;
     padding: 2%; 
@@ -143,81 +144,123 @@ font-family: Orbitron;
 
 .normal{
     display: inline-block;
-    border-radius: 5%;
-    background-color: #ee8fd1;
-    padding:5px;
+    border-radius: 10px;
+    background-color: rgb(19, 18, 18);
+    padding:6px;
     width:auto;
     height:auto;
-    color: black;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
     transition: 0.3s;
-    
+    box-shadow: -12px -12px 12px  rgb(255,255,255,0.01),    
+             12px 12px 12px  rgb(0,0,0,0.5);
+             
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #41e600, 0 0 20px #49e600, 0 0 25px #6fe600, 0 0 30px #00e60c, 0 0 35px #00e60c;
 }
 .cmd{
     display: inline-block;
     width:auto;
     height:auto;
-    padding:5px;
-    border-radius: 5%;
-    background-color:#ee8fd1;
-    color: black;
+    padding:6px;
+    border-radius: 10px;
+    font-family: "Courier New", Courier, monospace;
+    background-color:rgb(19, 18, 18);
+    color: white;
     transition: 0.3s;
+    box-shadow: -12px -12px 12px  rgb(255,255,255,0.01),    
+             12px 12px 12px  rgb(0,0,0,0.5);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #41e600, 0 0 20px #49e600, 0 0 25px #6fe600, 0 0 30px #00e60c, 0 0 35px #00e60c;
+             
 }
 .normal:hover, .cmd:hover{
-    color: white;
-    background-color: black;
+    transform:scale(0.98);
     cursor: pointer;
 }
 .console{
     margin-left: 10%;
-    background-color:#ee8fd1;
+    background-color:black;
     height:600px;
     width:80%;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: start;
-    padding: 0.5%;
-    color:black;
+    padding: 2%;
+    color:white;
     font-weight: bold;
     overflow-y: scroll;
+    box-shadow: -12px -12px 12px  rgb(255,255,255,0.01),    
+             12px 12px 12px  rgb(0,0,0,0.3);
 }
+
 .UI{
-    background-color: #eeeeee;
+    background-color: rgb(12, 12, 12);
     height:auto;
     width:100%;
-    border-radius: 5px;
-    text-align: start;
-    padding: 5%;
-    color:black;
-    font-weight: 4rem;
+    border-radius: 10px;
+    padding: 2%;
+    color:white;
+    text-align: left;
+    box-shadow: -12px -12px 12px  rgb(255,255,255,0.01),    
+             12px 12px 12px  rgb(0,0,0,0.3);
+}
+.selections{
+    display: inline-block;
+    height:auto;
+    width:30%;
+    margin-left: 0;
+    color:white;
+    font-weight: 3rem;
+    
+   
+}
+
+.showcase{
+/* display: inline-block; */
+margin-right: 2%;
+padding:4%;
+float: right;
+width: 60%;
+height: 400px;
+color: white;
+border-radius: 10px;
+vertical-align: top;
+
+background-color: rgb(12, 12, 12);
+box-shadow: -12px -12px 12px  rgb(255,255,255,0.01),    
+             12px 12px 12px  rgb(0,0,0,0.3);
+overflow-y: scroll;
+
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 input[type="text"]{
     max-width: 10em;
     border: none;
     font-family: inherit;
-    background: #ee8fd1;
+    background: black;
     padding:0 .5em;
     font-weight: bold;
   }
   input[type="text"]:focus{
-    background: #ee8fd1;
-    color: #000;
+    background: black;
+    color: white;
     outline:none;
     font-weight: bold;
   }
 .powers{
     position: relative;
-    width:20%;
+    width:80%;
     height:100px;
-    border-radius: 5%;
-    box-shadow: -12px -12px 12px  rgb(255,255,255,0.5),    
-             12px 12px 12px  rgb(0,0,0,0.1);
+    margin:auto;
+    
+    box-shadow: -12px -12px 12px  rgb(255,255,255,0.01),    
+             12px 12px 12px  rgb(0,0,0,0.3);
     margin-bottom: 20px;
-    
-    
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;  
+    animation: glow 1s ease-in-out infinite alternate;
 }
 .power1{
     position: absolute;
     text-align: center;
-    font-family: cursive;
+    font-family: 'Warnes', cursive;
     font-weight: bold;
     width:90%;
     height:70px;
@@ -225,17 +268,28 @@ input[type="text"]{
     top:15%;
     left:5%;
     padding: 2%;
-    box-shadow: -12px -12px 12px  rgb(255,255,255,0.2),    
-             12px 12px 12px  rgb(0,0,0,0.3);
+    box-shadow: -12px -12px 12px  rgb(255,255,255,0.02),    
+             12px 12px 12px  rgb(0,0,0,1);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;         
     transition: 0.1s;
-      
+    animation: glow 1s ease-in-out infinite alternate;
 }
+
 .power1:hover{
       transform: scale(0.98);
-      background-color: whitesmoke;
       cursor: pointer;
+      
   }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+    }
+  }
+  
+  
  .haan{
-     
      margin: 6%;
  } 
