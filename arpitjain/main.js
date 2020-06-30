@@ -1,7 +1,7 @@
 
 
   var typed = new Typed('.summary',{
-    strings:["I'm a Developer","I Know Node.js","I Know ML","I Know Python","I Know MongoDb","And Many More...."],
+    strings:["I'm a Developer","I Know Node.js","I Know Python","I Know MongoDb","And Many More...."],
     backSpeed: 40,
     typeSpeed: 90,
     loop:true
