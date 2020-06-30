@@ -4,6 +4,7 @@ var command = document.querySelector(".command");
   $("section").hide();
   $("#home").show();
   $(".showcase section").hide();
+  $("#aboutme").show();
   $("#Aboutme").on("click",function(){
    $(".showcase section").hide();
    $("#aboutme").show();
